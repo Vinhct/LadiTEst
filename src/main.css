@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+*,
+::before,
+::after {
+  border-color: rgb(226 232 240);
+}
+
+body {
+  background: #fff;
+  color: rgb(15 23 42);
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.animate-in {
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
